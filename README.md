@@ -1,4 +1,4 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# HTTP headers for web security
 
 To start the slide show:
 
