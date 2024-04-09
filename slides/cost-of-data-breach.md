@@ -1,17 +1,13 @@
 ---
-# class: text-center
-layout: two-cols
+class: pl-15%
+layout: center
 title: Cost of a data breach
 ---
 <h1>Cost of a data breach</h1>
 
 <Transform scale="0.9">
 
-- GDPR
-- HIPAA
-- PCI DSS
-
-https://eriskhub.com/mini-calc-usli
+[Sample Data Breach Cost Calculator for PCI, PHI, PII](https://eriskhub.com/mini-calc-usli)
 
 <Citation
   citeHref="https://en.wikipedia.org/wiki/GDPR_fines_and_notices"
@@ -25,15 +21,7 @@ https://eriskhub.com/mini-calc-usli
 
 The [Enforcement Tracker](https://www.enforcementtracker.com/) gives an overview of reported fines and penalties which data protection authorities within the EU have imposed so far.
 
-Estimate the GDPR fine of a German company:
-
-https://www.enforcementtracker.com/?finemodel-germany
-
-</Transform>
-
-::right::
-
-<Transform scale="0.9">
+[Estimate the GDPR fine for a German company](https://www.enforcementtracker.com/?finemodel-germany)
 
 <Citation
   citeHref="https://www.gpdp.it/web/guest/home/docweb/-/docweb-display/docweb/9991101"

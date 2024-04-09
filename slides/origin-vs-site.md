@@ -6,11 +6,11 @@ title: origin vs site
 
 <Transform scale="0.95">
 
-| **Request from** | **Request to** | **Same-site?** | **Same-origin?** |
+| **Request from** | **Request to** | **Same site?** | **Same origin?** |
 | --- | --- | --- | --- |
 | `https://example.com` | `https://example.com` | ✅ | ✅ |
 | `https://app.example.com` | `https://intranet.example.com` | ✅ | ❌ domain name |
-| `https://example.com` | `https://example.com` | ✅ | ❌ port |
+| `https://example.com` | `https://example.com:8080` | ✅ | ❌ port |
 | `https://example.com` | `https://example.co.uk` | ❌ eTLD | ❌ domain name |
 | `https://example.com` | `https://example.com` | ❌ scheme | ❌ scheme |
 

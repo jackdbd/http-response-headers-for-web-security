@@ -11,7 +11,7 @@ title: Access-Control-Allow-Origin
 
 <CrossOriginFetch src="https://www.w3schools.com/images/w3schools_green.jpg" />
 
-<CrossOriginFetch src="https://www.w3schools.com/images/w3schools_green.jpg" no-cors="true" />
+<CrossOriginFetch src="https://www.w3schools.com/images/w3schools_green.jpg" no-cors />
 
 </Transform>
 
@@ -23,6 +23,8 @@ title: Access-Control-Allow-Origin
 
 <p>Image served by <code>corsproxy.io</code></p>
 <CrossOriginFetch src="https://corsproxy.io/?https://www.w3schools.com/images/w3schools_green.jpg" />
+
+<CrossOriginFetch src="https://corsproxy.io/?https://www.w3schools.com/images/w3schools_green.jpg" no-cors />
 
 </Transform>
 

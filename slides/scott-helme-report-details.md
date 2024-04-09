@@ -44,8 +44,5 @@ title: Scott Helme's crawler report February 2024 details
 - ~80k sites have a grade on Security Header of A+, A or B
 - ~200k use HSTS
 
-**Fun facts**
-
-- [owasp.org](https://owasp.org/Top10/) has a CSP
-- [cheatsheetseries.owasp.org](https://cheatsheetseries.owasp.org/) does NOT have a CSP
+What's missing in this security score? Caching (next slide)
 -->

@@ -1,25 +1,25 @@
 ---
 layout: center
+title: Wrap up
 ---
 <h1>Wrap up</h1>
 
 <Transform scale="0.95">
 
-todo
+### Tips
 
-**Fun facts**
+- use a web framework
+- configure `Strict-Transport-Security` and `Content-Security-Policy`
+- use a web security scanner like <Anchor href="https://github.com/trailofbits/twa" text="twa (tiny web auditor)" />
+- do some <Anchor href="https://portswigger.net/web-security/learning-paths" text="labs on PortSwigger" />
+- practice with <Anchor href="https://github.com/juice-shop/juice-shop" text="OWASP Juice shop" /> and <Anchor href="https://github.com/ssrdio/SecureBank" text="SecureBank" />
+- Adopt a defense-in-depth approach
 
-- [owasp.org](https://owasp.org/) has a CSP
-- [cheatsheetseries.owasp.org](https://cheatsheetseries.owasp.org/) does NOT have a CSP
+<br>
+
+### Fun facts
+
+- [owasp.org](https://owasp.org/) has a CSP (grade <b style="color: #51AF44;">A</b> on Security Headers)
+- [cheatsheetseries.owasp.org](https://cheatsheetseries.owasp.org/) does NOT have a CSP (grade <b style="color: #FF0000;">F</b> on Security Headers)
 
 </Transform>
-
-<!--
-general tips:
-
-- use a framework
-- use a web security scanner. I learned a lot by using twa and other scanners
-- do some labs on PortSwigger
-- hack yourself first
-- practice with OWASP Juice shop and SecureBank
--->

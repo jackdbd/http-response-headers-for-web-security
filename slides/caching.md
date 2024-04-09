@@ -5,7 +5,7 @@ title: Caching
 ---
 <h1>Caching guidelines</h1>
 
-<Transform scale="0.95">
+<Transform scale="0.9">
 
 Caching is important not just for <span class="color:accent">performance</span>, but also for <span class="color:accent">privacy</span> and <span class="color:accent">security</span>.
 
@@ -13,7 +13,7 @@ It's important to know how the [many browser caches](https://calendar.perfplanet
 
 CDNs (e.g. AWS CloudFront, GCP Media CDN) and object storages (e.g. AWS S3, GCP Cloud Storage, Cloudflare R2) define their own caching behavior and set different `Cache-control` directives for different resources. Read the docs.
 
-Caching is **not just** `Cache-Control`.
+Caching is **not just** `Cache-Control`, but also `ETag`, `Vary`, etc.
 
 A misconfiguration of one or more headers that influence caching can lead to [web cache poisoning](https://portswigger.net/web-security/web-cache-poisoning).
 
@@ -25,7 +25,7 @@ Think about an appropriate caching policy for <span class="color:accent">each pa
 
 <h1>Security & privacy tips</h1>
 
-<Transform scale="0.95">
+<Transform scale="0.9">
 
 Use `no-store` to avoid caching [sensitive information](https://cwe.mitre.org/data/definitions/525.html).
 
@@ -48,4 +48,7 @@ Clear-Side-Data is [not supported by Firefox, nor by Safari](https://caniuse.com
 Without a service worker, the user might continue to get the hacked HTML from their HTTP cache for a long time, but the service worker gives us a bit more control. When the user visits Squoosh, the browser will check for updates to the service worker in the background. Our new, unhacked service worker is in a good position to look at the current state of things and decide if the user is running the hacked version. If that's the case, we need to get rid of anything the hacked version may have compromised. The best way to do that is to burn it all down & start again.
 
 The new service worker could dump all caches, unregister itself, and navigate all clients to /emergency. This URL would serve a Clear-Site-Data: * header, deleting everything stored & cached by the origin, then redirect to /.
+
+Disable caching for response that contain sensitive data.
+Don't store sensitive data unnecessarily. Discard it as soon as possible or use PCI DSS compliant tokenization or even truncation. Data that is not retained cannot be stolen.
 -->

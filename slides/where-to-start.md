@@ -2,7 +2,7 @@
 layout: intro
 title: Where to start with web security?
 ---
-<h1>(web) security can be <span class="color:accent">overwhelming</span>. Where to start?</h1>
+<h1>(web) security can be <span class="color:accent">overwhelming</span>.<br>Where to start?</h1>
 
 <Transform scale="1">
 

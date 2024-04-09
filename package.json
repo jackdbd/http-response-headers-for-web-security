@@ -2,6 +2,8 @@
   "name": "http-response-headers-for-web-security",
   "type": "module",
   "private": true,
+  "author": "Giacomo Debidda <giacomo@giacomodebidda.com> (https://giacomodebidda.com/)",
+  "license": "MIT",
   "scripts": {
     "build": "slidev build",
     "build:pdf": "npm run build:pdf:slides && npm run build:pdf:notes",
@@ -21,7 +23,8 @@
     "vue": "^3.4.21"
   },
   "devDependencies": {
-    "simple-git-hooks": "^2.11.1",
+    "@vercel/edge": "latest",
+    "simple-git-hooks": "latest",
     "playwright-chromium": "^1.42.1"
   },
   "simple-git-hooks": {

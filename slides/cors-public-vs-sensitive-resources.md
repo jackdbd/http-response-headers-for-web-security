@@ -1,7 +1,7 @@
 ---
 # class: pl-5% pr-5% pt-5%
 layout: two-cols
-title: Same-origin policy and CORS 3
+title: "CORS: public vs sensitive resources"
 ---
 <h1>CORS: public resources</h1>
 
