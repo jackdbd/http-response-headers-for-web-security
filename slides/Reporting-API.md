@@ -52,4 +52,14 @@ Content-Type: application/reports+json
 ```
 
 [Figma uses the Reporting API to monitor for crashes](https://neugierig.org/software/blog/2023/01/browser-crashes.html).
+
+[NEL is not supported in the Reporting API v1](https://developer.chrome.com/blog/reporting-api-migration#network_error_logging). If you want to receive NEL reports, you need to use the Reporting API v0 (Report-To header).
+
+Your browser sends reports about policy violations, browser deprecations, crashes, network errors, DNS errors to Report URI.
+Report URI keeps these reports for 90 days.
+
+Pricing:
+
+- Free plan: monitor 3 websites; store 10k reports each month.
+- Paid plans: from 10 USD to 250 USD per month.
 -->

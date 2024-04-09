@@ -41,7 +41,7 @@ src: ./slides/speaker.md
 ---
 
 ---
-src: ./slides/why-intro.md
+src: ./slides/why-this-talk.md
 ---
 
 ---
@@ -161,7 +161,19 @@ src: ./slides/same-origin-policy-cors.md
 ---
 
 ---
+src: ./slides/same-origin-policy-cors-2.md
+---
+
+---
+src: ./slides/CORS-misconfiguration-intro.md
+---
+
+---
 src: ./slides/same-origin-policy-corp-coep-coop.md
+---
+
+---
+src: ./slides/same-origin-policy-corp-coep-coop-2.md
 ---
 
 ---
@@ -173,7 +185,11 @@ src: ./slides/Reporting-API-Instagram.md
 ---
 
 ---
-src: ./slides/Report-URI.md
+src: ./slides/Reporting-API-single-or-batch-reports.md
+---
+
+---
+src: ./slides/Report-URI-csp-violation.md
 ---
 
 ---
@@ -181,7 +197,11 @@ src: ./slides/caching.md
 ---
 
 ---
-src: ./slides/scott-helme-report.md
+src: ./slides/how-secure-are-the-top-1-million-sites.md
+---
+
+---
+src: ./slides/scott-helme-report-details.md
 ---
 
 ---
@@ -197,15 +217,7 @@ src: ./slides/cryptographic-failures.md
 ---
 
 ---
-src: ./slides/CORS-misconfiguration-intro.md
----
-
----
 src: ./slides/learn-more.md
----
-
----
-src: ./slides/conclusions.md
 ---
 
 ---
@@ -213,7 +225,7 @@ src: ./slides/cost-of-data-breach.md
 ---
 
 ---
-src: ./slides/gdpr-fines.md
+src: ./slides/conclusions.md
 ---
 
 ---

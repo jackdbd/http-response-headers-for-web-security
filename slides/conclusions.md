@@ -7,6 +7,11 @@ layout: center
 
 todo
 
+**Fun facts**
+
+- [owasp.org](https://owasp.org/) has a CSP
+- [cheatsheetseries.owasp.org](https://cheatsheetseries.owasp.org/) does NOT have a CSP
+
 </Transform>
 
 <!--

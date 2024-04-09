@@ -5,7 +5,7 @@ title: Cost of a data breach
 ---
 <h1>Cost of a data breach</h1>
 
-<Transform scale="0.95">
+<Transform scale="0.9">
 
 - GDPR
 - HIPAA
@@ -33,7 +33,7 @@ https://www.enforcementtracker.com/?finemodel-germany
 
 ::right::
 
-<Transform scale="0.95">
+<Transform scale="0.9">
 
 <Citation
   citeHref="https://www.gpdp.it/web/guest/home/docweb/-/docweb-display/docweb/9991101"
@@ -71,4 +71,8 @@ https://sprinto.com/blog/pci-dss-fines/
 https://www.upguard.com/blog/cost-of-data-breach
 
 https://connect.comptia.org/content/articles/the-cost-of-a-breach-10-terrifying-cybersecurity-stats-your-msp-s-customers-need-to-know
+
+- [GDPR Enforcement Tracker Report](https://cms.law/en/deu/publication/gdpr-enforcement-tracker-report)
+- [GDPR  Enforcement Tracker ](https://www.enforcementtracker.com/)
+- [What are the GDPR Fines?](https://gdpr.eu/fines/)
 -->

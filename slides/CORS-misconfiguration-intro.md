@@ -1,9 +1,13 @@
 ---
+# class: pl-15% pr-15%
 layout: default
+title: CORS misconfigurations
 ---
-<h1>CORS misconfiguration</h1>
+<h1>CORS misconfigurations</h1>
 
 <Transform scale="0.95">
+
+TODO: finish this slide
 
 Probably the most **insecure** CORS configuration you can have:
 
@@ -22,6 +26,9 @@ Access-Control-Allow-Origin: null
 ```
 
 https://jakearchibald.com/2021/cors/
+
+When CORS are misconfigured and `Vary: Origin` hasn't been specified, the response may be stored in the browser's cache.
+[Exploiting CORS misconfigurations for Bitcoins and bounties](https://portswigger.net/research/exploiting-cors-misconfigurations-for-bitcoins-and-bounties)
 
 </Transform>
 

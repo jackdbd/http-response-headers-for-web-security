@@ -1,28 +1,37 @@
 ---
 # class: pl-15% pr-15%
-layout: default
+layout: two-cols
 title: Caching
 ---
-<h1>Caching</h1>
+<h1>Caching guidelines</h1>
 
 <Transform scale="0.95">
 
+Caching is important not just for <span class="color:accent">performance</span>, but also for <span class="color:accent">privacy</span> and <span class="color:accent">security</span>.
+
+It's important to know how the [many browser caches](https://calendar.perfplanet.com/2016/a-tale-of-four-caches/) work and [how to configure the Cache-Control header](https://csswizardry.com/2019/03/cache-control-for-civilians/).
+
+CDNs (e.g. AWS CloudFront, GCP Media CDN) and object storages (e.g. AWS S3, GCP Cloud Storage, Cloudflare R2) define their own caching behavior and set different `Cache-control` directives for different resources. Read the docs.
+
+Caching is **not just** `Cache-Control`.
+
 A misconfiguration of one or more headers that influence caching can lead to [web cache poisoning](https://portswigger.net/web-security/web-cache-poisoning).
 
-[CWE-525 Use of Web Browser Cache Containing Sensitive Information](https://cwe.mitre.org/data/definitions/525.html)
+Think about an appropriate caching policy for <span class="color:accent">each page</span> and <span class="color:accent">each resource</span> of your application.
 
-To understand how web cache poisoning vulnerabilities arise, it is important to have a basic understanding of how web caches work.
+</Transform>
 
-See [A Tale of Four Caches](https://calendar.perfplanet.com/2016/a-tale-of-four-caches/).
+::right::
 
-For example, use `no-store` to avoid caching sensitive information:
+<h1>Security & privacy tips</h1>
+
+<Transform scale="0.95">
+
+Use `no-store` to avoid caching [sensitive information](https://cwe.mitre.org/data/definitions/525.html).
 
 ```txt
 Cache-Control: no-store
 ```
-
-When CORS are misconfigured and `Vary: Origin` hasn't been specified, the response may be stored in the browser's cache.
-[Exploiting CORS misconfigurations for Bitcoins and bounties](https://portswigger.net/research/exploiting-cors-misconfigurations-for-bitcoins-and-bounties)
 
 Use the `Clear-Side-Data` header to purge browsing data (cookies, storage, cache).
 

@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "slidev build",
-    "build:pdf": "npm run build:slides && npm run build:notes",
+    "build:pdf": "npm run build:pdf:slides && npm run build:pdf:notes",
     "build:pdf:slides": "slidev export --executable-path $PLAYWRIGHT_LAUNCH_OPTIONS_EXECUTABLE_PATH --with-toc --output assets/presentation",
     "build:pdf:notes": "slidev export-notes --output assets/presentation-notes",
     "dev": "slidev --open",

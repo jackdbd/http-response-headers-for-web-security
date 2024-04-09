@@ -27,20 +27,16 @@ Reporting-Endpoints:
   default="https://www.instagram.com/error/ig_web_error_reports/?device_level=unknown",
   permissions_policy="https://www.instagram.com/error/ig_web_error_reports/"
 ```
-<br>
 
-<Citation
-  citeHref="https://developer.chrome.com/docs/capabilities/web-apis/reporting-api#keys_endpoint_names"
-  citeText="Monitor your web application with the Reporting API ">
-  <template v-slot:quote>
-    <p slot="quote">
-      Despite its name, <code>default</code> is <span class="color:accent">not a fallback</span> endpoint.
-    </p>
-  </template>
-</Citation>
+Things to keep in mind:
+
+- To receive <span class="color:accent">intervention</span>, <span class="color:accent">deprecation</span> and/or <span class="color:accent">crash</span> reports, set an endpoint named `default`. If the `Reporting-Endpoints` header defines no `default` endpoint, reports of this type will not be sent.
+- <span class="color:accent">All other reports</span> require an explicit endpoint in the `Reporting-Endpoints` header. Despite its name, `default` is not a fallback endpoint.
 
 </Transform>
 
 <!--
+If the `Reporting-Endpoints` header defines no `default` endpoint, reports of this type will not be sent (although they will be generated).
+
 At the moment Document-Policy is still an [unofficial draft](https://wicg.github.io/document-policy/). Here is its [explainer](https://github.com/WICG/document-policy/blob/main/document-policy-explainer.md).
 -->

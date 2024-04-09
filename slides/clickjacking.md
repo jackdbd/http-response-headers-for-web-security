@@ -7,7 +7,7 @@ title: Clickjacking
 
 <Transform scale="1">
 
-```html
+```html {all|15-18,21-24}
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -22,8 +22,8 @@ title: Clickjacking
   </div>
 
   <div style="position: absolute; left: 40%; top: 10%;">
+    <!-- never gets clicked since the iframe covers the entire page -->
     <button type="button" style="border-color: red; border-width: 2px; color: red;">
-      <!-- never gets clicked since the iframe covers the entire page -->
       TOTALLY LEGIT BUTTON
     </button>
   </div>

@@ -7,7 +7,7 @@ title: Cross-Site Request Forgery
 
 <Transform scale="1">
 
-```html {all|13-17|21|all}
+```html {all|13-17,21}
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
