@@ -18,13 +18,4 @@ Cross-Origin Resource Sharing (CORS) response headers:
 - `Access-Control-Request-Headers`
 - `Access-Control-Request-Method`
 
-<span class="color:accent">CORS misconfigurations</span> can be dangerous: <Anchor
-  href="https://portswigger.net/research/exploiting-cors-misconfigurations-for-bitcoins-and-bounties"
-  text="Exploiting CORS misconfigurations for Bitcoins and bounties"
-  alt="James Kettle presentation at OWASP AppSec EU Belfast" />
-
 </Transform>
-
-<!--
-todo: add Vary: Origin
--->

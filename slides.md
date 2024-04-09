@@ -157,15 +157,15 @@ src: ./slides/same-origin-policy.md
 ---
 
 ---
-src: ./slides/same-origin-policy-cors.md
+src: ./slides/same-origin-policy-and-cors.md
 ---
 
 ---
-src: ./slides/same-origin-policy-cors-2.md
+src: ./slides/cors-2.md
 ---
 
 ---
-src: ./slides/CORS-misconfiguration-intro.md
+src: ./slides/cors-3.md
 ---
 
 ---
@@ -205,6 +205,10 @@ src: ./slides/scott-helme-report-details.md
 ---
 
 ---
+src: ./slides/conclusions.md
+---
+
+---
 src: ./slides/owasp-top-10.md
 ---
 
@@ -222,10 +226,6 @@ src: ./slides/learn-more.md
 
 ---
 src: ./slides/cost-of-data-breach.md
----
-
----
-src: ./slides/conclusions.md
 ---
 
 ---

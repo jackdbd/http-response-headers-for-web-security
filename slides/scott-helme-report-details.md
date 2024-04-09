@@ -38,8 +38,6 @@ title: Scott Helme's crawler report February 2024 details
 </Transform>
 
 <!--
-TODO: maybe add sorted bar graphs with Vega Lite or vega-embed.
-
 **Top 1 million analysis (2024/02)**
 
 - ~100k sites use CSP

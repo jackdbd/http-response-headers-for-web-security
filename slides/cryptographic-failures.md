@@ -1,9 +1,11 @@
 ---
 layout: default
 ---
-# [Cryptographic Failures](https://owasp.org/Top10/A02_2021-Cryptographic_Failures/)
+# Cryptographic Failures
 
 <Transform scale="1">
+
+https://owasp.org/Top10/A02_2021-Cryptographic_Failures/
 
 passwords, credit card numbers, health records, personal information, and business secrets require extra protection, mainly if that data falls under privacy laws, e.g., EU's General Data Protection Regulation (GDPR), or regulations, e.g., financial data protection such as PCI Data Security Standard (PCI DSS)
 

@@ -2,7 +2,7 @@
 layout: default
 title: origin vs site
 ---
-<h1>Origin vs Site</h1>
+<h1>origin vs site</h1>
 
 <Transform scale="0.95">
 

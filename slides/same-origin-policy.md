@@ -17,22 +17,17 @@ title: Same-origin policy
   <div>
     <h2>Cross-origin reads</h2>
     <CrossOriginFetch />
-    <CrossOriginFetch :no-cors="true" />
   </div>
 </div>
 
 </Transform>
 
 <!--
-
 [Cross-origin network access](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy#cross-origin_network_access):
 
 - Cross-origin writes are typically allowed. Examples are links, redirects, and form submissions. Some HTTP requests require preflight.
 - Cross-origin embedding is typically allowed.
 - Cross-origin reads are typically disallowed, but read access is often leaked by embedding.
 
-https://stackoverflow.com/questions/43262121/trying-to-use-fetch-and-pass-in-mode-no-cors
-
-TODO: try using a CORS proxy
-https://nordicapis.com/10-free-to-use-cors-proxies/
+[10 Free to Use CORS Proxies](https://nordicapis.com/10-free-to-use-cors-proxies/)
 -->

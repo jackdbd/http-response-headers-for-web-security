@@ -2,7 +2,7 @@
 layout: default
 title: origin
 ---
-<h1>Origin</h1>
+<h1>origin</h1>
 
 <Transform scale="0.95">
 
@@ -22,6 +22,8 @@ Example: <strong><span>https</span><span>://example.com</span></strong> (80 is t
 </Transform>
 
 <!--
+I used `origin` lowercase to make it clear we are not talking about the `Origin` header.
+
 origin != site
 
 - [What's the difference between a site and an origin?](https://portswigger.net/web-security/csrf/bypassing-samesite-restrictions)

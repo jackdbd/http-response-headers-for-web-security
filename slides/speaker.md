@@ -9,13 +9,7 @@ title: Speaker
 <div class="leading-8 opacity-80">
   <p>Freelance full stack developer / web performance consultant</p>
   <p>I write TypeScript / Clojure / Zig</p>
-  <p>I like:</p>
-  <ul>
-    <li><span>📚 - add me on <Anchor href="https://www.goodreads.com/user/show/76503683-giacomo-debidda" text="goodreads" /></span></li>
-    <li><span>🛹 - <Anchor href="https://en.wikipedia.org/wiki/Surfskating" text="surfskating" /> actually</span></li>
-    <li><span>🛼 - <Anchor href="https://www.reddit.com/r/rollerblading/comments/hmwr47/its_time_for_a_rollerblading_emoji/" text="it's time for a rollerblading emoji" /></span></li>
-  </ul>
-  <!-- <span>I like 📚 (add me on <Anchor href="https://www.goodreads.com/user/show/76503683-giacomo-debidda" text="goodreads" />), 🛹 (<Anchor href="https://en.wikipedia.org/wiki/Surfskating" text="surfskating" /> actually) and 🛼 (<Anchor href="https://www.reddit.com/r/rollerblading/comments/hmwr47/its_time_for_a_rollerblading_emoji/" text="it's time for a rollerblading emoji" />)</span><br> -->
+  <p>I like 🛹 and 🛼</p>
 </div>
 
 <div class="my-10 grid grid-cols-[40px_1fr] w-min gap-y-4">
@@ -32,5 +26,8 @@ title: Speaker
 <!--
 Useful links:
 
-- [Emoji flags](https://apps.timwhitlock.info/emoji/tables/iso3166)
+- 🇮🇹 [Emoji flags](https://apps.timwhitlock.info/emoji/tables/iso3166)
+- 📚 Add [me on goodreads](https://www.goodreads.com/user/show/76503683-giacomo-debidda)
+- 🛹 [Surfskating](https://en.wikipedia.org/wiki/Surfskating)
+- 🛼 [It's time for a rollerblading emoji](https://www.reddit.com/r/rollerblading/comments/hmwr47/its_time_for_a_rollerblading_emoji)
 -->
