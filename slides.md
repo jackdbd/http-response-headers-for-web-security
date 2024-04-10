@@ -194,7 +194,11 @@ src: ./slides/Reporting-API-single-or-batch-reports.md
 ---
 
 ---
-src: ./slides/Report-URI-csp-violation.md
+src: ./slides/Report-URI-csp-reports.md
+---
+
+---
+src: ./slides/Report-URI-coep-reports.md
 ---
 
 ---

@@ -35,8 +35,7 @@ The global `crossOriginIsolated` read-only property returns a boolean value that
 
 - [A guide to enable cross-origin isolation](https://web.dev/articles/cross-origin-isolation-guide)
 - [Why you need "cross-origin isolated" for powerful features](https://web.dev/articles/why-coop-coep)
-
-https://stackoverflow.com/questions/72881660/web-worker-blocked-by-self-crossoriginisolated-on-cypress/72999996#72999996
-
-https://www.chromium.org/Home/chromium-security/site-isolation/
+- [My answer to the question "Web worker blocked by self.crossOriginIsolated on Cypress"](https://stackoverflow.com/questions/72881660/web-worker-blocked-by-self-crossoriginisolated-on-cypress/72999996#72999996)
+- [Site Isolation on Chromium Security docs](https://www.chromium.org/Home/chromium-security/site-isolation/)
+- [COOP reports in Report URI](https://report-uri.com/products/coop_reports)
 -->

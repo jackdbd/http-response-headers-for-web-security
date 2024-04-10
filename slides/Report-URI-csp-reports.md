@@ -1,13 +1,14 @@
 ---
-class: pl-15% pr-15% pt-10%
-layout: center
-title: "Example of a CSP violation in Report URI"
+class: text-center
+# class: pl-15% pr-15% pt-10%
+layout: default
+title: CSP reports in Report URI
 ---
-<h1>CSP violation in Report URI</h1>
+<h1>CSP reports in Report URI</h1>
 
 <Transform scale="0.95">
 
-<img src="/csp-violation-report-uri.png" class="w-75% m-auto" />
+<img src="/csp-violation-report-uri.png" class="w-60% m-auto" />
 
 </Transform>
 
