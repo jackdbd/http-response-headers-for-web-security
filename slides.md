@@ -182,6 +182,7 @@ src: ./slides/coep-require-corp.md
 ---
 
 ---
+hide: true
 src: ./slides/coop-same-origin.md
 ---
 

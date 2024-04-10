@@ -15,16 +15,16 @@ Cross-Origin-Opener-Policy: same-origin
 <!-- https://developer.mozilla.org/en-US/docs/Web/API/Window/open -->
 
 <!-- this opens URL in new window -->
-<!-- <CoopSameOriginDemo features="width=640,height=480" target="Window Left" url="https://kitchen-sink-demos.vercel.app/api/coop" /> -->
+<CoopSameOriginDemo features="width=640,height=480" target="Window Left" />
 
 <!-- this opens URL in new tab -->
-<!-- <CoopSameOriginDemo target="_blank" url="https://kitchen-sink-demos.vercel.app/api/coop" /> -->
+<!-- <CoopSameOriginDemo target="_blank" /> -->
 
 <!-- this opens URL in new tab -->
-<!-- <CoopSameOriginDemo url="https://kitchen-sink-demos.vercel.app/api/coop" /> -->
+<!-- <CoopSameOriginDemo /> -->
 
 <!-- this navigates to URL -->
-<CoopSameOriginDemo target="_self" url="https://kitchen-sink-demos.vercel.app/api/coop" />
+<!-- <CoopSameOriginDemo target="_self" /> -->
 
 </Transform>
 
@@ -36,9 +36,9 @@ Cross-Origin-Opener-Policy: same-origin
 
 todo
 
-<!-- <CoopSameOriginDemo target="_parent" url="https://kitchen-sink-demos.vercel.app/api/coop" /> -->
+<!-- <CoopSameOriginDemo target="_parent" /> -->
 
-<!-- <CoopSameOriginDemo target="_top" url="https://kitchen-sink-demos.vercel.app/api/coop" /> -->
+<!-- <CoopSameOriginDemo target="_top" /> -->
 
 <!-- <CoopSameOriginDemo url="https://giacomodebidda.com/" /> -->
 
