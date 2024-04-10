@@ -182,6 +182,10 @@ src: ./slides/coep-require-corp.md
 ---
 
 ---
+src: ./slides/coop-same-origin.md
+---
+
+---
 src: ./slides/Reporting-API.md
 ---
 
