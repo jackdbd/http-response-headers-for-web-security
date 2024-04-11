@@ -198,6 +198,10 @@ src: ./slides/Reporting-API-single-or-batch-reports.md
 ---
 
 ---
+src: ./slides/reports-chrome-devtools.md
+---
+
+---
 src: ./slides/Report-URI-csp-reports.md
 ---
 

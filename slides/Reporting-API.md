@@ -41,6 +41,12 @@ You can host your reporting server or use a security logging service like <Ancho
 - [Reporting API](https://www.w3.org/TR/reporting-1/)
 - [Network Error Logging (NEL)](https://web.dev/articles/network-error-logging)
 
+As they say in [this comment](https://github.com/elastic/kibana/issues/149985#issuecomment-1447991700):
+
+- `report-uri` directive is deprecated as it sends a single request per violation, which isn’t scalable.
+- `report-to` directive with `Report-To` request header is considered legacy Reporting API and should not be used anymore.
+- `report-to directive` with `Reporting-Endpoints` request header is part of latest spec (Reporting API v1).
+
 The browser attempts to deliver queued reports as soon as they're ready (in order to provide timely feedback to the developer) but it can also delay delivery if it's busy processing higher priority work or the user is on a slow and/or congested network at the time.
 
 The browser may also prioritize sending reports about a particular origin first, if the user is a frequent visitor.

@@ -55,6 +55,19 @@ Cross-Origin-Opener-Policy: same-origin
 </Transform>
 
 <!--
+[Links to cross-origin destinations are unsafe](https://developer.chrome.com/docs/lighthouse/best-practices/external-anchors-use-rel-noopener/)
+
+The article [Introducing Firefox’s new Site Isolation Security Architecture](https://hacks.mozilla.org/2021/05/introducing-firefox-new-site-isolation-security-architecture/) explains really well why we need site isolation:
+
+> The only way to provide memory protections necessary to defend against Spectre-like attacks is to rely on the security guarantees that come with isolating content from different sites using the operating system’s process separation.
+>
+> Without Site Isolation, Firefox does not separate web content into different processes and it’s possible for different sites to be loaded in the same process.
+>
+> Without Site Isolation, the browser will load embedded pages, such as a bank page or an ad, in the same process as the top level document.
+
+> Without site isolation, a malicious site could embed a legitimate site within a subframe and try to trick you into entering sensitive information. With the current architecture, if a page contains any subframes from a different site, they will generally be in the same process as the outer tab.
+> This results in both the page and all of its subframes sharing process memory, even if the subframes originate from different sites. In the case of a successful Spectre-like attack, a top-level site might access sensitive information it should not have access to from a subframe it embeds (and vice-versa).
+
 The Window interface's `opener` property returns a reference to the window that opened the window, either with `open()`, or by navigating a link with a `target` attribute. In other words, if window A opens window B, B.opener returns A.
 
 Browsers implicitly set `rel=noopener` for any `target=_blank` link. See [here](https://mathiasbynens.github.io/rel-noopener/).

@@ -11,6 +11,7 @@
     "build:pdf:notes": "slidev export-notes --output assets/presentation-notes",
     "dev": "slidev --open",
     "export": "slidev export",
+    "update-git-hooks": "simple-git-hooks",
     "view:pdf:slides": "atril assets/presentation.pdf"
   },
   "dependencies": {
@@ -28,6 +29,6 @@
     "playwright-chromium": "^1.42.1"
   },
   "simple-git-hooks": {
-    "pre-push": "npm run build"
+    "pre-push": "echo 'do not forget to export the slides as a PDF and commit the PDF'"
   }
 }
