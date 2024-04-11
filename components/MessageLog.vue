@@ -59,7 +59,7 @@ onUnmounted(() => {
 
 <style scoped>
 .message-log {
-  max-height: 50vh;
+  max-height: max(15em, 45vh);
   overflow: auto;
 }
 </style>

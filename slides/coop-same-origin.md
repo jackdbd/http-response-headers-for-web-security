@@ -23,7 +23,7 @@ window.opener.postMessage(
 <!-- in production: -->
 ```js
 window.opener.postMessage(
-  'hello from another origin', // message to send
+  { foo: 'bar', num: 123 }, // message to send
   'https://http-response-headers-for-web-security.vercel.app') // origin of these slides
 ```
 
@@ -63,8 +63,30 @@ Even if the tab of site A (or site B) has a reference to the Window that opened 
 
 From site C we can't use `window.opener.postMessage()` because `window.opener` is `null` due to the `Cross-Origin-Opener-Policy: same-origin` header.
 
+From site A or site B (but not site C) we could also do something like this:
+
+```
+window.opener.location.replace('https://pranx.com/hacker/')
+```
+
+However, this will not work in any case:
+
+```
+window.opener.navigation.navigate('https://pranx.com/hacker/')
+```
+
+This will not work either:
+
+```
+window.opener.open('https://pranx.com/hacker/')
+```
+
 - Windows opened because of links with a target of _blank don't get an opener, unless explicitly requested with rel=opener.
 - Having a Cross-Origin-Opener-Policy header with a value of same-origin prevents setting opener. Since the new window is loaded in a different browsing context, it won't have a reference to the opening window.
 - [`opener` property](https://developer.mozilla.org/en-US/docs/Web/API/Window/opener)
 - [HTML `rel=opener`](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel#opener)
+
+Why do we need site isolation? It's explained in the document [Post-Spectre Threat Model Re-Think](https://chromium.googlesource.com/chromium/src/+/master/docs/security/side-channel-threat-model.md). Here's an excerpt:
+
+> we definitely need some sort of ‘privileged/PII data isolation’ guarantees as well, for example ensuring that password and credit card info are not speculatively loaded into a renderer process without user consent. 
 -->

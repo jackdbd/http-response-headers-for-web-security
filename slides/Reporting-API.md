@@ -9,10 +9,10 @@ title: Reporting API
 
 <p>The browser can generate reports when there are:</p>
 <ul>
-  <li>security violations (configured with <code>*-Policy</code> headers)</li>
-  <li>deprecated API calls</li>
-  <li>browser interventions</li>
-  <li>crashes</li>
+  <li>security policy violations (configured with <code>*-Policy</code> headers)</li>
+  <li>deprecated API calls (still an <Anchor href="https://wicg.github.io/deprecation-reporting/" text="unofficial draft" />)</li>
+  <li>browser interventions (e.g. <Anchor href="https://chromestatus.com/features#intervention" text="Chromium interventions" />)</li>
+  <li>crashes (see <Anchor href="https://neugierig.org/software/blog/2023/01/browser-crashes.html" text="this article by Figma" />)</li>
 </ul>
 <p>The browser decides when to send these reports to the endpoint(s) you configured.<br>
 You can host your reporting server or use a security logging service like <Anchor href="https://report-uri.com/" text="Report URI" />.</p>

@@ -30,8 +30,8 @@ Reporting-Endpoints:
 
 Things to keep in mind:
 
-- To receive <span class="color:accent">intervention</span>, <span class="color:accent">deprecation</span> and/or <span class="color:accent">crash</span> reports, set an endpoint named `default`. If the `Reporting-Endpoints` header defines no `default` endpoint, reports of this type will not be sent.
-- <span class="color:accent">All other reports</span> require an explicit endpoint in the `Reporting-Endpoints` header. Despite its name, `default` is not a fallback endpoint.
+- To receive <span class="color:accent">intervention</span>, <span class="color:accent">deprecation</span> and/or <span class="color:accent">crash</span> reports, define an endpoint named `default` in the `Reporting-Endpoints` header. There is no `report-to` directive to set.
+- To receive <span class="color:accent">policy reports</span>, define an endpoint in the `Reporting-Endpoints` header and reference it in the `report-to` directive. Despite its name, `default` is not a fallback endpoint for these reports.
 
 </Transform>
 
