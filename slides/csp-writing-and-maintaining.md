@@ -10,7 +10,7 @@ title: Writing and maintaining a CSP
 1. <span class="color:accent">Test your CSP</span> on [Mozilla Observatory](https://observatory.mozilla.org/) (personal favorite), [CSP Evaluator](https://csp-evaluator.withgoogle.com/), or [Security Headers](https://securityheaders.com/).
 1. Whenever you <span class="color:accent">add new content</span> (e.g. new inline style), a new asset (e.g. image, font) or connect to a new domain (e.g. with a `<link rel="prefetch">`), check for CSP errors/warnings in DevTools. Update your CSP accordingly.
 1. Whenever you <span class="color:accent">remove content</span> (e.g. you are no longer hosting images on that CDN but you are now self-hosting them), review your CSP.
-1. Configure a <span class="color:accent">security logging service</span> like [Report URI](https://report-uri.com/) to catch CSP violations. You can do this using the `report-to` and the `report-uri` directives.
+1. Configure the `report-to` and `report-uri` directives to send CSP violations to a <span class="color:accent">security logging service</span> like [Report URI](https://report-uri.com/).
 
 </Transform>
 
@@ -22,9 +22,9 @@ title: Writing and maintaining a CSP
 
 ❌ Do not write your CSP by hand in a `_headers` file (Cloudflare Pages, Netlify) or in a `vercel.json` file. It will soon become really hard to maintain.
 
-❌ Do not rely on a tool that writes a generic CSP for you. Your CSP must be tailored to your site.
+❌ Do not rely on a tool that writes a generic CSP for you. Your CSP must be tailored to your website.
 
-✅ If your CSP is simple, consider a low-key approach, like generating `_headers` / `vercel.json` using a templating engine. See [this example with Nunjucks](https://github.com/nhoizey/nicolas-hoizey.photo/blob/main/src/_headers.njk).
+✅ If your CSP is simple, consider a low-key approach, like generating `_headers` / `vercel.json` using a template engine. See [this example with Nunjucks](https://github.com/nhoizey/nicolas-hoizey.photo/blob/main/src/_headers.njk).
 
 ✅ If your CSP grows in size, use a tool for writing it. For example: <Anchor href="https://github.com/papandreou/seespee" text="seespee" />, <Anchor href="https://github.com/MarcelloTheArcane/netlify-plugin-csp-generator" text="netlify-plugin-csp-generator" />, <Anchor href="https://github.com/jackdbd/content-security-policy" text="@jackdbd/content-security-policy" />, <Anchor href="https://github.com/jackdbd/undici/tree/main/packages/eleventy-plugin-content-security-policy" text="@jackdbd/eleventy-plugin-content-security-policy" />.
 

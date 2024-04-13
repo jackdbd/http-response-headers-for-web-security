@@ -26,7 +26,5 @@ title: Why this talk?
 <!--
 Modern browsers are good sandboxing environments and have a lot of security features, but we often don't exploit them fully.
 
-I was at OWASP Italy Day 2023. I was talking to the guys at the [Contrast](https://www.contrastsecurity.com/ ) and [SecureFlag](https://www.secureflag.com/) booths. I saw how SecureFlag integrates with GitHub and comments your PR when it contains insecure code.
-
-[Google update their Minimum Viable Secure Product](https://probely.com/blog/google-update-their-minimum-viable-secure-product)
+OWASP: Open Worldwide Application Security Project
 -->

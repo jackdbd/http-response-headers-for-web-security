@@ -17,7 +17,7 @@ Cross-Origin-Embedder-Policy: require-corp
   <iframe src="https://kitchen-sink-demos.vercel.app/api/coep" height="100%" width="100%" frameborder="0" title="COEP Example"></iframe>
 </div>
 
-The `<iframe>` is not the problem. If you <Anchor href="https://kitchen-sink-demos.vercel.app/api/coep" text="visit the page directly" /> you will not see the video either.
+The `<iframe>` is not the problem. If you <Anchor href="https://kitchen-sink-demos.vercel.app/api/coep" text="visit the page directly" /> you will <span class="color:accent">not</span> see the video either.
 
 </Transform>
 

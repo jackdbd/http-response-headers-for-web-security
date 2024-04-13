@@ -17,7 +17,7 @@ Assume the web page is served over HTTPS.
 Attempts to load a script (active content) over HTTP will be blocked and will generate <Anchor
   href="https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content"
   text="mixed content"
-  alt="mixed content" /> warnings.
+  alt="mixed content" /> errors.
 </v-click>
 
 <br>
@@ -34,6 +34,7 @@ Attempts to load an image (passive/display content) over HTTP might* be allowed,
 </v-click>
 
 <div v-after>
+<br>
 <span>*</span>Most browsers prevent mixed active content from loading, and some also block mixed display content.
 </div>
 

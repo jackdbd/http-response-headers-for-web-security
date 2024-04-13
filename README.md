@@ -2,6 +2,13 @@
 
 Slides and code for my talk on HTTP headers for web security.
 
+I gave this talk at [pisa.dev](https://pisa.dev/).
+
+- 🌐 https://http-response-headers-for-web-security.vercel.app/
+- 🗎 https://raw.githubusercontent.com/jackdbd/http-response-headers-for-web-security/main/assets/presentation.pdf
+
+If you want to see my notes on a slide, click the [Presenter Mode](https://sli.dev/guide/presenter-mode) button or put `presenter/` just before the slide number (e.g. `<HOST>/presenter/5` instead of `<HOST>/5`).
+
 ## Installation
 
 This presentation is a Vue.js application built with [Slidev](https://sli.dev/). You can install its dependencies with the following command:

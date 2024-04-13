@@ -37,6 +37,8 @@ This web page:
 </Transform>
 
 <!--
+It's an HTTP connection, not HTTPS. An attacker could do [eavesdropping](https://en.wikipedia.org/wiki/Network_eavesdropping), perform a man-in-the-middle attack.
+
 Instead of an HTTP 200 (Success) it would have been safer to receive an HTTP 301 (Moved Permanently), which would have redirected us to the HTTPS version of the site.
 
 The first 4 entries in the Mozilla's Web Security Cheat Sheet involve TLS in one way or another:

@@ -15,7 +15,7 @@ CDNs (e.g. AWS CloudFront, GCP Media CDN) and object storages (e.g. AWS S3, GCP 
 
 Caching is **not just** `Cache-Control`, but also `ETag`, `Vary`, etc.
 
-A misconfiguration of one or more headers that influence caching can lead to [web cache poisoning](https://portswigger.net/web-security/web-cache-poisoning).
+A misconfiguration of caching headers can leave you vulnerable to [web cache poisoning](https://portswigger.net/web-security/web-cache-poisoning).
 
 Think about an appropriate caching policy for <span class="color:accent">each page</span> and <span class="color:accent">each resource</span> of your application.
 
@@ -33,7 +33,7 @@ Use `no-store` to avoid caching [sensitive information](https://cwe.mitre.org/da
 Cache-Control: no-store
 ```
 
-Use the `Clear-Side-Data` header to purge browsing data (cookies, storage, cache).
+Send a `Clear-Side-Data` response header to tell the browser to purge browsing data (cookies, storage, cache).
 
 As Jake Archibald suggests in [What happens when packages go bad?](https://jakearchibald.com/2018/when-packages-go-bad/#recovering-after-a-successful-hack), an `/emergency` URL could serve a `Clear-Site-Data: *` header, deleting everything stored & cached by the origin, then redirect to `/`.
 

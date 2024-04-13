@@ -57,12 +57,5 @@ A minimum max-age of 12 months is required for inclusion in HSTS preload lists.
 
 Basically we use HSTS to enforce HTTPS on all resources, on all subdomains.
 
-The first 4 entries in the Mozilla's Web Security Cheat Sheet involve TLS in one way or another:
-
-1. Configure the TLS version and the cipher suite (e.g. pick TLS 1.3 if your web server only needs to support modern browsers).
-2. Ensure all resources are served over HTTPS, to avoid mixed content warnings.
-3. Redirect all HTTP traffic to HTTPS.
-4. Configure HSTS using the Strict-Transport-Security header.
-
-https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html
+[HTTP Strict Transport Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html)
 -->

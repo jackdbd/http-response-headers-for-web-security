@@ -17,14 +17,15 @@ title: Clickjacking
 </head>
 
 <body>
-  <div style="position: absolute; left: 25%; top: 5%;">
-    You won! Click TOTALLY LEGIT BUTTON to get your prize!
+  <div>
+    <h1>You won!</h1>
+    <p>Click DECOY BUTTON to get your prize!</p>
   </div>
 
-  <div style="position: absolute; left: 40%; top: 10%;">
+  <div style="position: absolute; left: 25%; top: 35%;">
     <!-- never gets clicked since the iframe covers the entire page -->
     <button type="button" style="border-color: red; border-width: 2px; color: red;">
-      TOTALLY LEGIT BUTTON
+      DECOY BUTTON
     </button>
   </div>
 

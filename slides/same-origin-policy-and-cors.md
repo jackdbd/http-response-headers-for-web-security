@@ -9,13 +9,13 @@ title: Same-origin policy and CORS
 
 Cross-Origin Resource Sharing (CORS) response headers:
 
-- `Access-Control-Allow-Credentials`
-- `Access-Control-Allow-Headers`
-- `Access-Control-Allow-Methods`
-- `Access-Control-Allow-Origin`
-- `Access-Control-Expose-Headers`
-- `Access-Control-Max-Age`
-- `Access-Control-Request-Headers`
-- `Access-Control-Request-Method`
+1. `Access-Control-Allow-Credentials`
+1. `Access-Control-Allow-Headers`
+1. `Access-Control-Allow-Methods`
+1. `Access-Control-Allow-Origin`
+1. `Access-Control-Expose-Headers`
+1. `Access-Control-Max-Age`
+1. `Access-Control-Request-Headers`
+1. `Access-Control-Request-Method`
 
 </Transform>

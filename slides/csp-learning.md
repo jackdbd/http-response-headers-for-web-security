@@ -25,6 +25,8 @@ The good news is that you will know <span class="color:accent">exactly</span> wh
 </Transform>
 
 <!--
+A CSP with just `default-src: 'self'` basically allows only **same-origin fetches**.
+
 https://content-security-policy.com/examples/
 
 https://developers.cloudflare.com/pages/configuration/headers/

@@ -11,3 +11,7 @@ layout: center
 <img src="/hsts-cloudflare.png" class="w-50% m-auto" />
 
 </Transform>
+
+<!--
+As you can see from the figure, the last option is for the `X-Content-Type-Options` header. Let's talk about that now.
+-->

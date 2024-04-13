@@ -15,9 +15,9 @@ We can explicitly declare the MIME type of a resource:
 Content-Type: text/html; charset=utf-8
 ```
 
-Browsers not always trust us, and try to "sniff" the MIME type of a resource. This behavior is called <span class="color:accent">content sniffing</span>.
+Browsers don't always trust us, and try to "sniff" the MIME type of a resource. This behavior is called <span class="color:accent">content sniffing</span>.
 
-- Old browsers sniff if `Content-Type` is not set, or if it set (e.g. `text/plain` but the content looks like HTML → old browsers render it as HTML).
+- Old browsers sniff if `Content-Type` is not set, or even if it is set (e.g. `text/plain` but the content looks like HTML → old browsers render it as HTML).
 - Modern browsers sniff if `Content-Type` is not set.
 
 Attackers can exploit the sniffing behavior of the browser: <span class="color:accent">MIME confusion attacks</span>.
@@ -36,7 +36,7 @@ It's easy to tell browsers not to sniff:
 X-Content-Type-Options: nosniff
 ```
 
-This not only prevents content sniffing, but also makes the [Cross Origin Read Blocking (CORB)](https://chromium.googlesource.com/chromium/src/+/main/services/network/cross_origin_read_blocking_explainer.md)* mechanism stricter in blocking cross-origin requests for JS, CSS, HTML, JSON, and XML (except SVG).
+This not only prevents content sniffing, but also makes the [Cross-Origin Read Blocking (CORB)](https://chromium.googlesource.com/chromium/src/+/main/services/network/cross_origin_read_blocking_explainer.md)* mechanism stricter in blocking cross-origin requests for JS, CSS, HTML, JSON, and XML (except SVG).
 
 <p>*See <Anchor href="https://youtu.be/vfAHa5GBLio?si=sQ7PZFmASEtrHl9f&t=1102" text="Cross-origin fetches - HTTP 203" /> for an explanation on how CORB mitigates Spectre and Meltdown.</p>
 

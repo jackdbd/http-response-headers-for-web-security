@@ -9,6 +9,8 @@ title: CSP bypasses
 
 Whenever possible*, opt for the <span class="color:accent">most specific</span> CSP directive available.
 
+For example, if we want to allow self-hosted `<script>` elements:
+
 <ul>
   <li class="list-none">🥉 Good: <code>default-src 'self'</code></li>
   <li class="list-none">🥈 Better: <code>script-src 'self'</code></li>
@@ -22,5 +24,8 @@ Why this? To mitigate [CSP bypasses](https://portswigger.net/web-security/cross-
 </Transform>
 
 <!--
+- The `script-src-elem` CSP directive specifies valid sources for JavaScript `<script>` elements.
+- The `script-src-attr` CSP directive specifies valid sources for JavaScript inline event handlers.
+
 [Content Security Policy (CSP) Bypass on HackTricks](https://book.hacktricks.xyz/pentesting-web/content-security-policy-csp-bypass).
 -->

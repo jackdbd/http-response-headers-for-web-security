@@ -138,14 +138,6 @@ src: ./slides/csp-writing-and-maintaining.md
 ---
 
 ---
-src: ./slides/Permissions-Policy.md
----
-
----
-src: ./slides/Referrer-Policy.md
----
-
----
 src: ./slides/origin.md
 ---
 
@@ -190,6 +182,14 @@ src: ./slides/coop-same-origin.md
 ---
 
 ---
+src: ./slides/Referrer-Policy.md
+---
+
+---
+src: ./slides/Permissions-Policy.md
+---
+
+---
 src: ./slides/Reporting-API.md
 ---
 
@@ -227,6 +227,10 @@ src: ./slides/caching.md
 
 ---
 src: ./slides/conclusions.md
+---
+
+---
+src: ./slides/questions.md
 ---
 
 ---

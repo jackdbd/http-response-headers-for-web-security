@@ -30,6 +30,11 @@ And this is what it means:
 <!--
 Referer logging is a form of tracking. Referer logging is used to allow websites and web servers to identify where people are visiting them from, for promotional or statistical purposes.
 
+For example:
+
+- request from subreddit A to subreddit B: same origin, send everything.
+- request from reddit to twitter: same just the origin.
+
 - [Referrer-Policy on MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy)
 - [Referer header: Privacy and security concerns](https://developer.mozilla.org/en-US/docs/Web/Security/Referer_header:_privacy_and_security_concerns)
 - [HTTP Headers - The State of the Web](https://youtu.be/riPSW5P127M?si=_dRFGRBC0Q8JEiV-&t=1062)
