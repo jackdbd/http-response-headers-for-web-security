@@ -70,6 +70,10 @@ src: ./slides/HSTS-Cloudflare.md
 ---
 
 ---
+src: ./slides/x-content-type-options.md
+---
+
+---
 src: ./slides/clickjacking.md
 ---
 

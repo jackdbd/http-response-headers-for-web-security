@@ -29,6 +29,6 @@
     "playwright-chromium": "^1.42.1"
   },
   "simple-git-hooks": {
-    "pre-push": "echo 'do not forget to export the slides as a PDF and commit the PDF'"
+    "pre-push": "echo '!!! Do not forget to export the slides and commit the PDF !!!'"
   }
 }
