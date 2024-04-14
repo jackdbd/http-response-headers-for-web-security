@@ -9,7 +9,7 @@ title: Same-origin policy and CORP, COEP and COOP
 
 - `Cross-Origin-Resource-Policy` (CORP)
 - `Cross-Origin-Embedder-Policy` (COEP)
-- `Cross-Origin-Opener-Policy` (COEP)
+- `Cross-Origin-Opener-Policy` (COOP)
 
 Send CORP with a <span class="color:accent">resource</span> (e.g. an image).
 

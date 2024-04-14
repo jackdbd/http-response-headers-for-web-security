@@ -38,8 +38,13 @@ Insted, we should let <span class="color:accent">the browser</span> redirect to 
 <!--
 [Betteridge's law of headlines](https://en.wikipedia.org/wiki/Betteridge%27s_law_of_headlines): Any headline that ends in a question mark can be answered by the word no.
 
-In a 2009 paper, Moxie Marlinspike introduced the concept of [SSL stripping](https://en.wikipedia.org/wiki/Moxie_Marlinspike#SSL_stripping), a man-in-the-middle attack in which a network attacker could prevent a web browser from upgrading to an SSL connection in a way that would likely go unnoticed by a user.
+In 2009, Moxie Marlinspike described [SSL stripping](https://en.wikipedia.org/wiki/Moxie_Marlinspike#SSL_stripping), a type of man-in-the-middle attack in which a network attacker could prevent a web browser from upgrading to an SSL connection in a way that would likely go unnoticed by a user.
 
 - [What are SSL Stripping Attacks? (keyfactor.com)](https://www.keyfactor.com/blog/what-are-ssl-stripping-attacks/)
 - [What Are SSL Stripping Attacks? (venafi.com)](https://venafi.com/blog/what-are-ssl-stripping-attacks/)
+- [Marlinspike presentation on SSL stripping at the Black Hat security conference in 2009](https://www.blackhat.com/presentations/bh-dc-09/Marlinspike/BlackHat-DC-09-Marlinspike-Defeating-SSL.pdf)
+
+Every internet connection starts out as insecure. Users need to visit a website with the HTTP version before they can establish authentication to move over to the secure HTTPS version. These steps are intended to ensure privacy and verify the legitimacy of those involved in the connection.
+
+Hackers can “strip” the SSL connection by inserting themselves in this process. When they do so, they act as a man in the middle by establishing their own HTTPS connection with the website (posing as the user) and maintaining the HTTP connection with the user (posing as the website).
 -->

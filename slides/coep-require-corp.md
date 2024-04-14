@@ -1,5 +1,4 @@
 ---
-# class: pl-5% pr-5% pt-5%
 layout: two-cols
 title: "Cross-Origin-Embedder-Policy: require-corp"
 ---
@@ -13,7 +12,7 @@ The `<iframe>` below embeds an HTML document which is served with this header:
 Cross-Origin-Embedder-Policy: require-corp
 ```
 
-<div class="flex" style="height: 33vh;">
+<div class="flex" style="height: max(15em,33vh);">
   <iframe src="https://kitchen-sink-demos.vercel.app/api/coep" height="100%" width="100%" frameborder="0" title="COEP Example"></iframe>
 </div>
 

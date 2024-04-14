@@ -8,11 +8,11 @@ title: Wrap up
 
 ### Tips
 
-- use a web framework
-- configure `Strict-Transport-Security` and `Content-Security-Policy`
-- use a web security scanner like <Anchor href="https://github.com/trailofbits/twa" text="twa (tiny web auditor)" />
-- do some <Anchor href="https://portswigger.net/web-security/learning-paths" text="labs on PortSwigger" />
-- practice with <Anchor href="https://github.com/juice-shop/juice-shop" text="OWASP Juice shop" /> and <Anchor href="https://github.com/ssrdio/SecureBank" text="SecureBank" />
+- Use a web framework
+- Configure `Strict-Transport-Security` and `Content-Security-Policy`
+- Use a web security scanner like <Anchor href="https://github.com/trailofbits/twa" text="twa (tiny web auditor)" />
+- Do some <Anchor href="https://portswigger.net/web-security/learning-paths" text="labs on PortSwigger" />
+- Practice with <Anchor href="https://github.com/juice-shop/juice-shop" text="OWASP Juice shop" /> and <Anchor href="https://github.com/ssrdio/SecureBank" text="SecureBank" />
 - Adopt a defense-in-depth approach
 
 <br>

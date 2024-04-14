@@ -1,5 +1,4 @@
 ---
-# class: pl-15% pr-15%
 layout: two-cols
 title: Caching
 ---
@@ -33,17 +32,19 @@ Use `no-store` to avoid caching [sensitive information](https://cwe.mitre.org/da
 Cache-Control: no-store
 ```
 
-Send a `Clear-Side-Data` response header to tell the browser to purge browsing data (cookies, storage, cache).
+Send a `Clear-Site-Data` response header to tell the browser to purge browsing data (cookies, storage, cache).
 
 As Jake Archibald suggests in [What happens when packages go bad?](https://jakearchibald.com/2018/when-packages-go-bad/#recovering-after-a-successful-hack), an `/emergency` URL could serve a `Clear-Site-Data: *` header, deleting everything stored & cached by the origin, then redirect to `/`.
+
+Unfortunately, `Clear-Site-Data` is [available only in Chromium-based browsers](https://caniuse.com/?search=clear-site-data).
 
 </Transform>
 
 <!--
 Vary determines which request header/s the browser should consider to decide whether to serve a cached response or not.
 
-Sending a Clear-Side-Data header is like taking all of your users' computers, opening Chrome DevTools and clearing cookies, web storage and cache.
-Clear-Side-Data is [not supported by Firefox, nor by Safari](https://caniuse.com/?search=Clear-Site-Data).
+Sending a Clear-Site-Data header is like taking all of your users' computers, opening Chrome DevTools and clearing cookies, web storage and cache.
+Clear-Site-Data is [not supported by Firefox, nor by Safari](https://caniuse.com/?search=Clear-Site-Data).
 
 Without a service worker, the user might continue to get the hacked HTML from their HTTP cache for a long time, but the service worker gives us a bit more control. When the user visits Squoosh, the browser will check for updates to the service worker in the background. Our new, unhacked service worker is in a good position to look at the current state of things and decide if the user is running the hacked version. If that's the case, we need to get rid of anything the hacked version may have compromised. The best way to do that is to burn it all down & start again.
 
